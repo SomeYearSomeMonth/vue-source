@@ -25,6 +25,8 @@ export default {
               })
             : null,
 
-        livereload({ watch: 'dist' }),
+        process.env.ENV === 'development'
+            ? livereload({ watch: 'dist' })
+            : null,
     ],
 }
