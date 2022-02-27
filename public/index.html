@@ -13,14 +13,20 @@
                 el: '#app',
                 data() {
                     return {
-                        count: 1,
-                        query: {
-                            pageSize: 1,
-                            pageNum: 10,
-                        },
+                        list: [
+                            {
+                                a: 1,
+                            },
+                            {
+                                b: 2,
+                            },
+                        ],
                     }
                 },
             })
+
+            vm._data.list.push({ c: 3 })
+            console.log(vm._data)
         </script>
     </body>
 </html>
