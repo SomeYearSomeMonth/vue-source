@@ -55,7 +55,6 @@ function defineReactive(data, key, value) {
 }
 
 export function observe(data) {
-    console.log(data)
     let isobj = isObject(data)
     if (!isobj) {
         return
