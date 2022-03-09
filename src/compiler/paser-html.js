@@ -8,7 +8,6 @@ const endTag = new RegExp(`^<\\/${qnameCapture}[^>]*>`)
 const attribute =
     /^\s*([^\s"'<>\/=]+)(?:\s*(=)\s*(?:"([^"]*)"+|'([^']*)'+|([^\s"'=<>`]+)))?/
 const startTagClose = /^\s*(\/?)>/
-const defaultTagRE = /\{\{((?:.|\r?\n)+?)\}\}/g
 
 let root = null // ast语法树的树根
 let currentParent // 标识当前父亲是谁
